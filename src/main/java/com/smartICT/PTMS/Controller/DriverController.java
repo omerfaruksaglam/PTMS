@@ -36,7 +36,7 @@ public class DriverController {
     }
 
     @PutMapping("/drivers/{ssn}")
-    public void updateDriver (@PathVariable(value = "ssn") long ssn, @RequestBody Driver driverDetails) throws ResourceNotFoundException {
+            public void updateDriver (@PathVariable(value = "ssn") long ssn, @RequestBody Driver driverDetails) throws ResourceNotFoundException {
         driverService.updateDriver(ssn, driverDetails);
     }
 
