@@ -4,7 +4,9 @@ import com.smartICT.PTMS.DataAccessLayer.DriverRepository;
 import com.smartICT.PTMS.Entities.Driver;
 import com.smartICT.PTMS.Excepitions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 @Service
 public class DriverService {
     private final DriverRepository driverRepository;

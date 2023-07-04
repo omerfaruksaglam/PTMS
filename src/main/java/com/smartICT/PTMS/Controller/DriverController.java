@@ -12,13 +12,12 @@ import java.util.List;
 @RequestMapping("/api")
 public class DriverController {
 
+    @Autowired
     private final DriverService driverService;
 
-    @Autowired
-    public DriverController(DriverService driverService) {
+    public DriverController(DriverService driverService){
         this.driverService = driverService;
     }
-
 
     @GetMapping("/drivers/{ssn}")
     public Driver getDriver(@PathVariable(value ="ssn") long ssn){

@@ -23,4 +23,5 @@ public class Station {
 
     @Column(name = "street")
     private String street;
+
 }
